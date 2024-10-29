@@ -51,13 +51,23 @@ p{
     display: block;
     padding: 20px 0;
 }
-.navegacion-principal{
-    max-height: 0;
-
-}
 #navegacion:target{
     max-height: 800px;
 }
+.navegacion-principal{
+    max-height: 0;
+    transition: .5s;
+
+}
+@media (min-width: 768px) {
+    .navegacion-principal{
+        max-height:unset ;
+    }
+    .mobile-menu,.cerrar{
+        display: none!important;
+    }
+}
+
 
 /** Navegacion **/
 .barra{
